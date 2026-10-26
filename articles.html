@@ -12,7 +12,7 @@ permalink: /articles/
     <meta name="description" content="weizengyong 的文章、技术笔记与实践记录。" />
     <title>文章 · weizengyong</title>
     <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml" />
-    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v=4" />
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v=5" />
     <script defer src="{{ '/script.js' | relative_url }}"></script>
   </head>
   <body>
@@ -23,7 +23,6 @@ permalink: /articles/
         <nav class="site-nav" aria-label="主导航">
           <a href="{{ '/#about' | relative_url }}">关于</a>
           <a href="{{ '/articles/' | relative_url }}" aria-current="page">文字</a>
-          <a href="{{ '/#work' | relative_url }}">作品</a>
           <a href="{{ '/#contact' | relative_url }}">联系</a>
         </nav>
         <a class="header-link" href="https://github.com/weizengyong" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -39,7 +38,7 @@ permalink: /articles/
           <a class="article-list-item" href="{{ post.url | relative_url }}">
             <time class="article-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y.%m.%d' }}</time>
             <div><h2>{{ post.title | escape }}</h2><p>{{ post.description | default: post.excerpt | strip_html | truncate: 110 | escape }}</p></div>
-            <span class="project-arrow" aria-hidden="true">↗</span>
+            <span class="article-arrow" aria-hidden="true">↗</span>
           </a>
           {% else %}
           <p class="article-empty"><strong>这里还留着一点空白。</strong><br />第一篇文章发布后，会从这里开始。</p>
