@@ -8,11 +8,11 @@ permalink: /articles/
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#101c1b" />
+    <meta name="theme-color" content="#f6f1e8" />
     <meta name="description" content="weizengyong 的文章、技术笔记与实践记录。" />
     <title>文章 · weizengyong</title>
     <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml" />
-    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v=3" />
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v=4" />
     <script defer src="{{ '/script.js' | relative_url }}"></script>
   </head>
   <body>
@@ -22,8 +22,8 @@ permalink: /articles/
         <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="weizengyong，返回首页"><span class="wordmark-icon" aria-hidden="true">w.</span><span>weizengyong</span></a>
         <nav class="site-nav" aria-label="主导航">
           <a href="{{ '/#about' | relative_url }}">关于</a>
-          <a href="{{ '/#work' | relative_url }}">项目</a>
-          <a href="{{ '/articles/' | relative_url }}" aria-current="page">文章</a>
+          <a href="{{ '/articles/' | relative_url }}" aria-current="page">文字</a>
+          <a href="{{ '/#work' | relative_url }}">作品</a>
           <a href="{{ '/#contact' | relative_url }}">联系</a>
         </nav>
         <a class="header-link" href="https://github.com/weizengyong" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -31,8 +31,8 @@ permalink: /articles/
       <main class="journal-main" id="main">
         <div class="journal-head">
           <div class="section-label"><span>03</span> / 文字记录</div>
-          <h1>文章<span class="period">.</span></h1>
-          <p>关于技术、项目与日常探索的记录。</p>
+          <h1>文字<span class="period">。</span></h1>
+          <p>一些随手记下的思考、实践与日常。</p>
         </div>
         <div class="article-list" aria-label="文章列表">
           {% for post in site.posts %}
@@ -42,11 +42,11 @@ permalink: /articles/
             <span class="project-arrow" aria-hidden="true">↗</span>
           </a>
           {% else %}
-          <p class="article-empty"><strong>文章正在整理中。</strong><br />第一篇文章发布后，会自动出现在这里。</p>
+          <p class="article-empty"><strong>这里还留着一点空白。</strong><br />第一篇文章发布后，会从这里开始。</p>
           {% endfor %}
         </div>
       </main>
-      <footer class="site-footer"><span>© <span id="year">2026</span> weizengyong</span><span>Built with curiosity.</span><a href="{{ '/' | relative_url }}">返回首页 ↑</a></footer>
+      <footer class="site-footer"><span>© <span id="year">2026</span> weizengyong</span><span>在这里，慢慢写，慢慢做。</span><a href="{{ '/' | relative_url }}">返回首页 ↑</a></footer>
     </div>
   </body>
 </html>
